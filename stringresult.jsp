@@ -1,0 +1,1 @@
+<p> Result : <b>${result}</b> </p> <br> <a href="string.html">Back</a>

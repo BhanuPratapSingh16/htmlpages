@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRUD Operations</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 25px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>Student CRUD Operations</h2>
+
+<!-- CREATE -->
+<h3>Insert Student</h3>
+<form action="insert" method="post">
+    ID:
+    <input type="text" name="id">
+
+    Name:
+    <input type="text" name="name">
+
+    Course:
+    <input type="text" name="course">
+
+    <button type="submit">Insert</button>
+</form>
+
+<hr>
+
+<!-- UPDATE -->
+<h3>Update Student</h3>
+<form action="update" method="post">
+    ID:
+    <input type="text" name="id">
+
+    Name:
+    <input type="text" name="name">
+
+    Course:
+    <input type="text" name="course">
+
+    <button type="submit">Update</button>
+</form>
+
+<hr>
+
+<!-- DELETE -->
+<h3>Delete Student</h3>
+<form action="delete" method="post">
+    ID:
+    <input type="text" name="id">
+
+    <button type="submit">Delete</button>
+</form>
+
+<hr>
+
+<!-- VIEW -->
+<h3>View Students</h3>
+<form action="view" method="get">
+    <button type="submit">View All</button>
+</form>
+
+</div>
+
+</body>
+</html>
